@@ -1,4 +1,4 @@
-#include "include/LinkedList.hpp"
+#include "../include/LinkedList.hpp"
 #include <iostream>
 int main(void){
     LinkedList<int> x;

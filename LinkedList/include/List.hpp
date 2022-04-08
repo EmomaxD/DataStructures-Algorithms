@@ -85,8 +85,7 @@ class LinkedList{
     }
     void Print(){      
         if(isEmpty())
-        std::cout<<"List is Empty"<<std::endl;
-        return;
+            return;      
          Node<T>* temp=firstNode;
          for(short i=0;i<length;i++){
             std::cout<<i<<" : "<<temp->getData()<<std::endl;
