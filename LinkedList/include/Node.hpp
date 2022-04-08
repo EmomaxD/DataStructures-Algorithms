@@ -5,7 +5,6 @@ class Node{
     private:
     Node* nextNode;
     T data;
-    
     public:
     Node(T data){
         this->data=data;
@@ -15,7 +14,6 @@ class Node{
         nextNode=NULL;
         data=NULL;
     }
-
     Node* getNextNode(){
         return this->nextNode;
     }
@@ -28,5 +26,4 @@ class Node{
     void setNextNode(Node* nNode){
         this->nextNode=nNode;
     }
-
 };

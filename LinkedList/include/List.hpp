@@ -12,9 +12,6 @@ class LinkedList{
       }
           return false;
     }
-    
-    
-
     public:
     LinkedList(){
         firstNode=lastNode=NULL;
@@ -92,6 +89,4 @@ class LinkedList{
             temp=temp->getNextNode();
          }         
         }
-        
-    
 };

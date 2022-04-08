@@ -7,6 +7,7 @@ int main(void){
     x.Add(13);
     x.Add(31231);
     x.Add(53252352);
+
     std::cout<<"List : "<<std::endl;
     x.Print();
 
