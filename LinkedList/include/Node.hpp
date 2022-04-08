@@ -3,27 +3,30 @@
 template <typename T>
 class Node{
     private:
-    short index;
     Node* nextNode;
-    T data=-1;
+    T data;
     
     public:
-    
-    Node(T data,Node* nextNode){
+    Node(T data){
         this->data=data;
-        this->nextNode=nextNode;
+        this->nextNode=NULL;
     }
     Node(){
-        //std::cout<<"New Node created!"<<std::endl;
+        nextNode=NULL;
+        data=NULL;
     }
-    short getIndex(){
-        return this->index;
-    }
+
     Node* getNextNode(){
         return this->nextNode;
     }
     T getData(){
         return this->data;
+    }
+    void setData(T* data){
+        this->data=data;
+    }
+    void setNextNode(Node* nNode){
+        this->nextNode=nNode;
     }
 
 };
